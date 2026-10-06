@@ -659,7 +659,7 @@
       <p>Currently studying Software Engineering at Lviv Polytechnic, I'm eager to grow my skills and contribute to innovative solutions in software development.</p>
       <div class="about-stats">
         <div class="stat-box">
-          <div class="stat-num">2+</div>
+          <div class="stat-num">3+</div>
           <div class="stat-label">Pet Projects</div>
         </div>
         <div class="stat-box">
@@ -715,8 +715,10 @@
         <span class="skill-tag">HTML</span>
         <span class="skill-tag">CSS</span>
         <span class="skill-tag">JavaScript</span>
-        <span class="skill-tag">JSON</span>
+        <span class="skill-tag">TypeScript</span>
+        <span class="skill-tag">Angular</span>
         <span class="skill-tag">React.js</span>
+        <span class="skill-tag">JSON</span>
       </div>
     </div>
     <div class="skill-cat reveal">
@@ -813,6 +815,24 @@
         Click to view details
       </div>
     </div>
+
+    <div class="project-card reveal" onclick="openModal('p3')">
+      <div class="project-num">PROJECT_03 — 2026.10</div>
+      <h3 class="project-title">GameStore E-Commerce Platform</h3>
+      <p class="project-desc">Full-stack digital game store platform built with ASP.NET Core 8 Web API, Angular 20 SPA, and MongoDB / SQL persistence. Includes catalog filtering, shopping cart, comment threads, publisher management, and payment microservice integration.</p>
+      <div class="project-stack">
+        <span class="stack-tag">ASP.NET Core 8</span>
+        <span class="stack-tag">Angular 20</span>
+        <span class="stack-tag">MongoDB</span>
+        <span class="stack-tag">REST API</span>
+        <span class="stack-tag">C#</span>
+        <span class="stack-tag">TypeScript</span>
+      </div>
+      <div class="click-hint">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+        Click to view details
+      </div>
+    </div>
   </div>
 </section>
 
@@ -892,6 +912,55 @@
 
       <div class="modal-section-title">Repository</div>
       <a href="https://github.com/bbnoskill/todo-list-app" target="_blank" class="modal-link">
+        View on GitHub
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-p3" onclick="closeModalOutside(event)">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-num">PROJECT_03 — 2026.10</div>
+      <button class="modal-close" onclick="closeModal('p3')">✕</button>
+    </div>
+    <div class="modal-body">
+      <h2 class="modal-title">GameStore E-Commerce Platform</h2>
+      <div class="modal-date">// October 2026 — EPAM Professional Course Project</div>
+      <p class="modal-desc">Comprehensive full-stack digital game store platform built with ASP.NET Core 8 Web API, Angular 20 SPA frontend, and MongoDB / SQL persistence layers. Features multi-attribute catalog filtering (publishers, genres, platforms, date thresholds), basket state persistence, threaded user comments with reply quotes, publisher management, and standalone payment microservice communication.</p>
+
+      <div class="modal-media">
+        <div class="modal-section-title">Demo Video</div>
+        <div class="modal-video">
+          <video controls>
+            <source src="demos/GameStore%20Demo.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="modal-section-title">Screenshots</div>
+        <div class="media-grid">
+          <img src="images/Gamestore1.png" alt="GameStore Catalog" class="media-img" onclick="openLightbox(this.src)">
+          <img src="images/Gamestore2.png" alt="GameStore Details" class="media-img" onclick="openLightbox(this.src)">
+          <img src="images/Gamestore3.png" alt="GameStore Filtering" class="media-img" onclick="openLightbox(this.src)">
+          <img src="images/Gamestore4.png" alt="GameStore Publishers" class="media-img" onclick="openLightbox(this.src)">
+        </div>
+      </div>
+
+      <div class="modal-section-title">Tech Stack</div>
+      <div class="modal-stack">
+        <span class="stack-tag">ASP.NET Core 8</span>
+        <span class="stack-tag">Angular 20</span>
+        <span class="stack-tag">C#</span>
+        <span class="stack-tag">TypeScript</span>
+        <span class="stack-tag">MongoDB</span>
+        <span class="stack-tag">Entity Framework Core</span>
+        <span class="stack-tag">REST API</span>
+        <span class="stack-tag">Microservices</span>
+      </div>
+
+      <div class="modal-section-title">Repository</div>
+      <a href="https://github.com/vladandriievskiy/game-store-v2-with-branches" target="_blank" class="modal-link">
         View on GitHub
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
